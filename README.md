@@ -207,7 +207,7 @@ We welcome contributions! Here's how to get started:
 
 ## License
 
-This project is proprietary software. All rights reserved.
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
 
 ## Contact
 
