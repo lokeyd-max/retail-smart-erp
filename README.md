@@ -4,6 +4,8 @@ A multi-tenant SaaS Point of Sale and ERP system built with **Next.js 16**, **Re
 
 **Live Demo:** [retailsmarterp.com](https://www.retailsmarterp.com)
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-red)](https://github.com/sponsors/ravindu2012) [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/ravindu2012)
+
 ## Screenshots
 
 ### Landing Page
@@ -204,6 +206,15 @@ We welcome contributions! Here's how to get started:
 - Use real-time hooks (`useRealtimeData`) for data-displaying components
 - Use server-side pagination (`usePaginatedData`) for list pages
 - Test your changes locally before submitting
+
+## Support This Project
+
+If this project saves you time or helps your business, consider supporting its development:
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor_on_GitHub-%E2%9D%A4-red?style=for-the-badge)](https://github.com/sponsors/ravindu2012)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/ravindu2012)
+
+Your support helps keep this project actively maintained and free for everyone.
 
 ## License
 
